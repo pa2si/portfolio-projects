@@ -26,9 +26,9 @@
     "**/*.ts",
     "**/*.tsx",
     ".next/types/**/*.ts",
-    "app/_sections/CustomWebBenefits/reasonsData.ts",
-    "app/_sections/Functionalities/data.ts",
-    "app/_sections/Navbar/data.js"
+    "lib/reasonsData.ts",
+    "lib/functionalitiesData.ts",
+    "lib/navbarData.js"
   ],
   "exclude": ["node_modules"]
 }

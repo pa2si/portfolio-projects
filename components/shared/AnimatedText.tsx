@@ -1,7 +1,7 @@
-'use client';
+"use client";
 
-import { motion, useAnimation } from 'framer-motion';
-import { useEffect } from 'react';
+import { motion, useAnimation } from "framer-motion";
+import { useEffect } from "react";
 
 interface AnimatedTextProps {
   text: string | string[];
@@ -31,7 +31,7 @@ const defaultAnimations = {
 
 const AnimatedText: React.FC<AnimatedTextProps> = ({
   text,
-  el: Wrapper = 'p',
+  el: Wrapper = "p",
   className,
   repeatDelay,
   startDelay = 0,
@@ -42,12 +42,12 @@ const AnimatedText: React.FC<AnimatedTextProps> = ({
   useEffect(() => {
     // Start the animation after the specified start delay
     const timeout = setTimeout(() => {
-      controls.start('visible').then(() => {
+      controls.start("visible").then(() => {
         // If repeatDelay is set, continue with the repeating logic after the visible animation
         if (repeatDelay) {
           setTimeout(async () => {
-            await controls.start('hidden');
-            controls.start('visible');
+            await controls.start("hidden");
+            controls.start("visible");
           }, repeatDelay);
         }
       });
@@ -73,9 +73,12 @@ const AnimatedText: React.FC<AnimatedTextProps> = ({
       >
         {textArray.map((line, lineIndex) => (
           <span className="block" key={`${line}-${lineIndex}`}>
-            {line.split(' ').map((word, wordIndex) => (
-              <span className="inline-block" key={`${word}-${wordIndex}`}>
-                {word.split('').map((char, charIndex) => (
+            {line.split(" ").map((word, wordIndex) => (
+              <span
+                className="inline-block font-mono"
+                key={`${word}-${wordIndex}`}
+              >
+                {word.split("").map((char, charIndex) => (
                   <motion.span
                     key={`${char}-${charIndex}`}
                     className="inline-block"

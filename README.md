@@ -1,8 +1,8 @@
-v 0.1.16
+v 0.1.17
 
 new:
 
-- share text adapted in ShareButton
+- latest UI and content for employer portfolio
 
 what's done:
 

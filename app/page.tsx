@@ -1,15 +1,11 @@
-import About from './_sections/About/About';
-import Hero from './_sections/Hero/Hero';
-import Intermediate from './_sections/Intermediate/Intermediate';
-import CustomWebBenefits from './_sections/CustomWebBenefits/CustomWebBenefits';
-import Functionalities from './_sections/Functionalities/Functionalities';
-import LayoutExamples from './_sections/LayoutExamples/LayoutExamples';
-import Contact from './_sections/Contact/Contact';
-import MultiLanguages from './_sections/MultiLanguage/MultiLanguages';
-
-import { menuLinks } from '@/app/_sections/Navbar/data';
-import DevModeProjects from './_sections/DevModeProjects/DevModeProjects';
-import devModeProjectsData from './_sections/DevModeProjects/data';
+import About from "../components/About";
+import Hero from "../components/Hero";
+import Intermediate from "../components/Intermediate";
+import ReasonsToChooseMe from "../components/ReasonsToChooseMe";
+import Functionalities from "../components/Functionalities";
+import Projects from "../components/Projects";
+import Contact from "../components/Contact";
+import { menuLinks } from "@/lib/navbarData";
 
 export default function Home() {
   // Original menuLinks object destructuring
@@ -19,54 +15,30 @@ export default function Home() {
   const processedMenuLinks = Object.fromEntries(
     Object.entries(originalMenuLinks).map(([key, value]) => [
       key,
-      value.replace('#', ''),
-    ])
+      value.replace("#", ""),
+    ]),
   );
 
   // Destructure the processed menuLinks object to get the IDs without '#'
-  const {
-    customWebBenefitsId,
-    layoutsId,
-    multiLanguageId,
-    functionalitiesId,
-    contactId,
-    devModeProjectsId,
-  } = processedMenuLinks;
+  const { reasonsToChooseMeId, projectsId, functionalitiesId, contactId } =
+    processedMenuLinks;
 
   return (
     <main>
       <Hero />
       <About />
+      <Intermediate text="Why give me work?" id={reasonsToChooseMeId} />
+      <ReasonsToChooseMe />
+      <Intermediate text="Explore some of my projects" id={projectsId} />
+      <Projects />
+
       <Intermediate
-        text="Why choose a custom-built Website?"
-        id={customWebBenefitsId}
-      />
-      <CustomWebBenefits />
-      <Intermediate
-        text="Explore layouts featuring typical elements and designs"
-        id={layoutsId}
-      />
-      <LayoutExamples />
-      <Intermediate
-        text="Take advantage of multi language site options"
-        id={multiLanguageId}
-      />
-      <MultiLanguages />
-      <Intermediate
-        text="Discover general functionalities for web apps."
+        text="Discover general functionalities for web apps using React.js"
         id={functionalitiesId}
       />
       <Functionalities />
-      <Intermediate
-        text="Explore Projects that are still in development"
-        id={devModeProjectsId}
-      />
-      <DevModeProjects />
 
-      <Intermediate
-        text="Contact me and lets find out what you need!"
-        id={contactId}
-      />
+      <Intermediate text="Let's get in contact!" id={contactId} />
       <Contact />
     </main>
   );
