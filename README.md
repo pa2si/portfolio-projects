@@ -1,18 +1,18 @@
-v 0.1.17
+v 0.1.18
 
 new:
 
-- latest UI and content for employer portfolio
+- imprint and privacy policy UI adapted
+- moved components from components-->shared folder one up to straight components folder
 
 what's done:
 
 - Navigation
 - Hero
 - About
-- CustomWebBenefits
+- ReasonsToChooseMe
 - Layouts
-- MultiLanguaes
-- Projects in Development
+- Functionalities
 - Intermediates
 - Contact
 - Footer

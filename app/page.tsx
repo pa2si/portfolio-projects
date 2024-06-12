@@ -1,6 +1,6 @@
 import About from "../components/About";
 import Hero from "../components/Hero";
-import Intermediate from "../components/Intermediate";
+import Intermediate from "../components/shared/Intermediate";
 import ReasonsToChooseMe from "../components/ReasonsToChooseMe";
 import Functionalities from "../components/Functionalities";
 import Projects from "../components/Projects";

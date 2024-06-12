@@ -39,6 +39,16 @@ const reasonsData = [
     description:
       "I am beginning to dive into the world of testing, eager to enhance the quality and reliability of my code. My commitment to learning testing practices will ensure robust and error-free applications.",
   },
+  {
+    title: "Commitment to Clean Code and Best Practices",
+    description:
+      "My goal is always to write clean code and adhere to best practices. This commitment ensures maintainability, readability, and efficiency in all my projects.",
+  },
+  {
+    title: "GitHub Utilization",
+    description:
+      "I use GitHub for version control and collaboration, ensuring that my code is well-documented and accessible. This practice not only improves my workflow but also allows for seamless teamwork and project management.",
+  },
 ];
 
 export default reasonsData;

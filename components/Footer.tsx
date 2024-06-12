@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { socialLinks, email, menuLinks } from "../lib/navbarData";
 import { usePathname } from "next/navigation";
-import ShareButton from "@/components/shared/ShareButton";
+import ShareButton from "@/components/ShareButton";
 
 const Footer = () => {
   const pathname = usePathname();

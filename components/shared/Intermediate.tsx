@@ -1,7 +1,7 @@
 const Intermediate = ({ text, id }: { text: string; id?: string }) => {
   return (
     <section
-      className="mx-auto flex min-h-[17rem] max-w-7xl items-center bg-base-100 py-8"
+      className="mx-auto flex min-h-[17rem] max-w-7xl items-center bg-base-100 py-4"
       id={id}
     >
       <div className="mx-auto flex items-center justify-center lg:w-4/6">

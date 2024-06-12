@@ -5,7 +5,7 @@ import { useEffect, useState, useRef } from "react";
 import { socialLinks, email, menuLinks } from "../lib/navbarData";
 import ThemeToggle from "@/components/ThemeToggle";
 import { usePathname } from "next/navigation";
-import ShareButton from "@/components/shared/ShareButton";
+import ShareButton from "@/components/ShareButton";
 
 const Navbar = () => {
   const pathname = usePathname();

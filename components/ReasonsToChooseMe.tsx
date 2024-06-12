@@ -48,9 +48,7 @@ const ReasonsToChooseMe = () => {
   return (
     <section className="mx-auto max-w-7xl">
       <div className="p-4 sm:p-8">
-        <h2 className="mb-4 text-2xl font-semibold">
-          Find here just a few reasons...
-        </h2>
+        <h2 className="mb-4 text-2xl font-semibold">Find here 10 reasons...</h2>
         <div className="space-y-6">
           {reasonsData.slice(0, visibleReasonsCount).map((reason, index) => (
             <motion.div

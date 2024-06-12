@@ -1,18 +1,14 @@
-import type { Metadata } from "next";
-import { Inter } from "next/font/google";
 import "./globals.css";
+import type { Metadata } from "next";
 import Navbar from "../components/Navbar";
 import { BebasNeue } from "./fonts";
 import { Toaster } from "react-hot-toast";
-import SchrollUp from "@/components/shared/ScrollUp";
+import SchrollUp from "@/components/ScrollUp";
 import Footer from "../components/Footer";
-
-const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Pascal is coding - Portfolio",
-  description:
-    "Explore my world of coding and find inspiration for your personal project",
+  description: "Explore my world of coding by checking out my projects",
 };
 
 export default function RootLayout({

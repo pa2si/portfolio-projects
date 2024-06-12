@@ -24,7 +24,7 @@ import Link from "next/link";
 import { slideIn } from "../utils/animations";
 
 const Contact = () => {
-  // 1. Define your form.
+  // Define  form.
   const form = useForm<z.infer<typeof FormSchema>>({
     resolver: zodResolver(FormSchema),
     defaultValues: {
@@ -35,7 +35,7 @@ const Contact = () => {
     },
   });
 
-  // 2. Define a submit handler.
+  // 2. Define submit handler.
   const handleSubmit = async (data: z.infer<typeof FormSchema>) => {
     try {
       const result = await sendEmail(data);
