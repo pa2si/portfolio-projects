@@ -1,8 +1,9 @@
-v 0.1.19
+v 0.1.20
 
 new:
 
-- Hero Component: min-h-screen changed to min-h-svh
+- Project: hover effect with "click here" only from md on.
+  - btn for "view website" now not sm anymore
 
 what's done:
 

@@ -44,7 +44,7 @@ const LayoutExample = ({ project }: { project: ProjectType }) => {
               className="rounded-t-md border-b-2 shadow-sm"
             />
             {/* div with hover text */}
-            <div className="absolute inset-0 flex items-center justify-center rounded-lg bg-black bg-opacity-50 opacity-0 transition-opacity duration-300 ease-in-out hover:opacity-100">
+            <div className="absolute inset-0 flex items-center justify-center rounded-lg bg-black bg-opacity-50 opacity-0 transition-opacity duration-300 ease-in-out md:hover:opacity-100">
               <span className="text-lg text-white">Click to view website</span>
             </div>
           </figure>
@@ -92,7 +92,7 @@ const LayoutExample = ({ project }: { project: ProjectType }) => {
               href={project.url}
               target="_blank"
               rel="noopener noreferrer"
-              className="btn btn-primary btn-sm"
+              className="btn btn-primary"
             >
               View Website
             </a>
