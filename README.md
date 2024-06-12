@@ -1,9 +1,8 @@
-v 0.1.20
+v 0.1.21
 
 new:
 
-- Project: hover effect with "click here" only from md on.
-  - btn for "view website" now not sm anymore
+- adapted first reason
 
 what's done:
 

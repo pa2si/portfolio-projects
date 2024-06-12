@@ -2,7 +2,7 @@ const reasonsData = [
   {
     title: "Certified Full Stack Web Developer",
     description:
-      " I am a certified Full Stack web developer from Indisoft, showcasing my formal education and unwavering commitment to the field. My certification underscores my dedication to delivering high-quality web development solutions.",
+      "I am a certified Full Stack web developer from Indisoft, showcasing my formal education and unwavering commitment to the field. My certification underscores my dedication to delivering high-quality web development solutions. Besides that certification, I have completed numerous Udemy courses and YouTube tutorials, continuously enhancing my skills and staying updated with the latest industry trends.",
   },
   {
     title: "Unstoppable Determination",
