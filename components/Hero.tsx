@@ -4,7 +4,7 @@ import Link from "next/link";
 const Hero = () => {
   return (
     <div
-      className="hero min-h-screen"
+      className="hero min-h-svh"
       style={{
         backgroundImage: "url(/oskar-yildiz-cOkpTiJMGzA-unsplash.jpg)",
       }}
