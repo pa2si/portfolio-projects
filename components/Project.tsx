@@ -67,16 +67,18 @@ const LayoutExample = ({ project }: { project: ProjectType }) => {
               <div className="flex flex-wrap gap-3 rounded-lg p-3 md:gap-4">
                 {projectStacks.map((stack) => (
                   /* image */
-                  <div key={stack.name} className="flex items-center">
-                    <Image
-                      src={stack.image}
-                      alt={stack.name}
-                      width={25}
-                      height={25}
-                      style={{ width: "25px", height: "25px" }}
-                    />
-                    <p className="ml-1">{stack.name}</p>
-                  </div>
+                  <figure key={stack.name} className="flex items-center">
+                    <i>
+                      <Image
+                        src={stack.image}
+                        alt={stack.name}
+                        width={25}
+                        height={25}
+                        style={{ width: "25px", height: "25px" }}
+                      />
+                    </i>
+                    <figcaption className="ml-1">{stack.name}</figcaption>
+                  </figure>
                 ))}
               </div>
               {/* description */}

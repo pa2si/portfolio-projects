@@ -1,8 +1,11 @@
-v 0.1.21
+v 0.1.22
 
 new:
 
-- adapted first reason
+- backroads project added to project
+- favicon adapted
+- some images in public folder removed.
+- in project.tsx replaced div for <figure>
 
 what's done:
 

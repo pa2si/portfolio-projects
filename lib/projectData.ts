@@ -23,7 +23,7 @@ export const projectsData: ProjectType[] = [
       "Google Maps Javascript API",
     ],
     description:
-      "This web app provides an easy overview of salsa events with month, week, or day views. Registered and logged-in users can add, update, and delete their own events, which are visible to all visitors, whether signed in or not. Authorization is managed using the Clerk library. The project uses Next.js server actions for backend communication. A complex form, with both front-end and back-end validation, sends event data to a Prisma database. The Google Maps JavaScript API is utilized for auto-complete to help fill out the form. For image hosting and uploading, with back-end validation, Edge Store is used. The web app is designed to scale easily. -- ongoing development! ",
+      "This web app provides an easy overview of salsa events with month, week, or day views. Registered and logged-in users can add, update, and delete their own events, which are visible to all visitors, whether signed in or not. Authorization is managed using the Clerk library. The project uses Next.js server actions for backend communication. A complex form, with both front-end and back-end validation, sends the form data to a Prisma database. The Google Maps JavaScript API is utilized for auto-complete to help fill out the form. For image hosting and uploading, with back-end validation, Edge Store is used. The web app is designed to scale easily.  [in ongoing development!] ",
   },
   {
     title: "Tortuga Storytelling",
@@ -65,6 +65,14 @@ export const projectsData: ProjectType[] = [
     stackNames: ["Next.js", "Javascript", "CSS", "Tailwind", "Framer-Motion"],
     description:
       "A contact site for a client who is in the process of setting up their company. Detailed services, images, and additional information are still to come. The tech stack is straightforward, and Framer Motion is used for simple animations. To avoid the use of cookies, the client opted against a direct Google Maps integration, preferring instead to include a link to Google Maps. ",
+  },
+  {
+    title: "Backroads Layout Example",
+    image: "/backroads.jpg",
+    url: "https://pa2si-backroads-app.netlify.app//",
+    stackNames: ["React.js", "CSS", "Framer-Motion"],
+    description:
+      "This is a frontend project demonstrating a simple user interface for a travel company using React.js and Vite. The goal is to showcase basic UI elements and functionalities created with React components.",
   },
 ];
 
@@ -132,5 +140,9 @@ export const stackData: StackType[] = [
   {
     name: "Google Maps Javascript API",
     image: "/Google__G__logo.svg.png",
+  },
+  {
+    name: "React.js",
+    image: "/react_logo.svg",
   },
 ];
