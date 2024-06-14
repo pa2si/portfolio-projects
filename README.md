@@ -1,8 +1,8 @@
-v 0.1.23
+v 0.1.24
 
 new:
 
-- updated text for about
+- updated text for Salsa-Calendar description
 
 what's done:
 

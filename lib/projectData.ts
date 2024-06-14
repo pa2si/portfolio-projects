@@ -23,7 +23,7 @@ export const projectsData: ProjectType[] = [
       "Google Maps Javascript API",
     ],
     description:
-      "This web app provides an easy overview of salsa events with month, week, or day views. Registered and logged-in users can add, update, and delete their own events, which are visible to all visitors, whether signed in or not. Authorization is managed using the Clerk library. The project uses Next.js server actions for backend communication. A complex form, with both front-end and back-end validation, sends the form data to a Prisma database. The Google Maps JavaScript API is utilized for auto-complete to help fill out the form. For image hosting and uploading, with back-end validation, Edge Store is used. The web app is designed to scale easily.  [in ongoing development!] ",
+      "This web app provides an easy overview of salsa events with month, week, or day views. Registered and logged-in users can add, update, and delete their own events, which are visible to all visitors, whether signed in or not. Authorization is managed using the Clerk library. The project uses Next.js server actions for backend communication. A complex form, with both front-end and back-end validation, sends the form data to a Prisma database. The Google Maps JavaScript API is utilized for auto-complete to help fill out the form. For image hosting and uploading, with back-end validation, Edge Store is used. The web app is designed to scale easily. Please note that the current focus is not yet on design. [in ongoing development!]",
   },
   {
     title: "Tortuga Storytelling",
