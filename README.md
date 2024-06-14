@@ -1,11 +1,8 @@
-v 0.1.22
+v 0.1.23
 
 new:
 
-- backroads project added to project
-- favicon adapted
-- some images in public folder removed.
-- in project.tsx replaced div for <figure>
+- updated text for about
 
 what's done:
 

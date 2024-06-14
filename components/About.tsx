@@ -1,6 +1,6 @@
-import Image from 'next/image';
-import { FaQuoteRight } from 'react-icons/fa';
-import { MotionDiv } from '@/lib/MotionComponents';
+import Image from "next/image";
+import { FaQuoteRight } from "react-icons/fa";
+import { MotionDiv } from "@/lib/MotionComponents";
 
 const About = () => {
   const slideIn = {
@@ -20,36 +20,36 @@ const About = () => {
 
   return (
     <section
-      className="min-h-[35rem] flex items-center justify-center pt-12 base-100 -mb-12"
+      className="base-100 -mb-12 flex min-h-[35rem] items-center justify-center pt-12"
       id="about"
     >
       <MotionDiv
-        className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 bg shadow-xl rounded-lg overflow-hidden"
+        className="bg mx-auto grid max-w-5xl grid-cols-1 overflow-hidden rounded-lg shadow-xl md:grid-cols-2"
         variants={slideIn}
         initial="initial"
         whileInView="animate"
         viewport={{ once: true }}
       >
         {/* Image container */}
-        <div className="w-full h-[200px] sm:h-[400px] md:h-auto relative">
+        <div className="relative h-[200px] w-full sm:h-[400px] md:h-auto">
           <Image
             src="/profile.jpg"
             alt="Profile image of Pascal Morgan"
             width={500}
             height={500}
             priority
-            className="rounded-l-lg object-cover w-full h-full"
+            className="h-full w-full rounded-l-lg object-cover"
           />
         </div>
 
         {/* Text container */}
-        <div className="p-8 space-y-6">
+        <div className="space-y-6 p-8">
           <div className="text-center md:text-left">
             <h2 className="text-2xl font-semibold text-primary">
               About Pascal Morgan
             </h2>
             <p className="mt-4 text-lg text-gray-600">
-              Hi, I&apos;m Pascal Morgan, a Berlin / Germany based Fullstack
+              Hi, I&apos;m Pascal Morgan, a Berlin / Germany based Full Stack
               Developer passionate about using newest technology regarding
               React.js and especially Next.js. Ready to bring my talent into
               your company!
