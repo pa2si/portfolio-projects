@@ -21,7 +21,7 @@ import { Loader } from "lucide-react";
 import { sendEmail } from "@/utils/actions";
 import toast from "react-hot-toast";
 import Link from "next/link";
-import { slideIn } from "../utils/animations";
+import { slideInY } from "../utils/animations";
 
 const Contact = () => {
   // Define  form.
@@ -56,7 +56,7 @@ const Contact = () => {
     <motion.div
       className="bg mx-auto mb-12 max-w-2xl rounded-lg border-2 border-base-200 p-8 shadow-lg"
       id="contact"
-      variants={slideIn}
+      variants={slideInY}
       initial="initial"
       whileInView="animate"
       viewport={{ once: true }}

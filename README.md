@@ -1,10 +1,10 @@
-v 0.1.26
+v 0.1.27
 
 new:
 
-- imprint und privacy import of SlideInY corrected
+- in Contact.tsx corrected the slideIn import
 
-what's done:
+  what's done:
 
 - Navigation
 - Hero
