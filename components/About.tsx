@@ -37,7 +37,7 @@ const About = () => {
             <h2 className="text-2xl font-semibold text-primary">
               About Pascal Morgan
             </h2>
-            <p className="mt-4 text-lg text-gray-600">
+            <p className="mt-4 border-b pb-2 text-lg text-gray-600 lg:border-none lg:pb-0">
               {aboutDescription.description}
             </p>
             <ul className="flex flex-wrap gap-3 rounded-lg p-3 md:gap-4">

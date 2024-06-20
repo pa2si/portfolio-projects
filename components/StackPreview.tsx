@@ -10,7 +10,7 @@ const StackPreview = ({
 }) => {
   const imageSize = showCaption
     ? { width: 25, height: 25 }
-    : { width: 34, height: 34 };
+    : { width: 30, height: 30 };
   return (
     <figure key={stack.name} className="flex items-center">
       <i>

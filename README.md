@@ -1,8 +1,9 @@
-v 0.1.27
+v 0.1.28
 
 new:
 
-- in Contact.tsx corrected the slideIn import
+- stack logos in about now 30 instead of 34px
+- border-b in mobile view
 
   what's done:
 
