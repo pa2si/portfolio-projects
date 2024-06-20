@@ -1,9 +1,8 @@
-v 0.1.25
+v 0.1.26
 
 new:
 
-- stack icons in about
-- staggered animation and slideIn are now animation object and function to import in animations.
+- imprint und privacy import of SlideInY corrected
 
 what's done:
 

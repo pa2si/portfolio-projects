@@ -1,11 +1,11 @@
 import { MotionSection } from "@/lib/MotionComponents";
-import { slideIn } from "@/utils/animations";
+import { slideInY } from "@/utils/animations";
 
 const Imprint = () => {
   return (
     <MotionSection
       className="mx-auto my-8 max-w-7xl rounded-lg border-t-2 bg-base-300 bg-opacity-10 p-8 shadow-lg shadow-primary sm:p-16"
-      variants={slideIn}
+      variants={slideInY}
       initial="initial"
       whileInView="animate"
       viewport={{ once: true }}
