@@ -76,7 +76,7 @@ export const projectsData: ProjectType[] = [
   },
 ];
 
-export const stackData: StackType[] = [
+export const projectStack: StackType[] = [
   {
     name: "Next.js",
     image: "/nextjs-icon-svgrepo-com.svg",

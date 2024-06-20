@@ -3,26 +3,13 @@
 import Image from "next/image";
 import { motion } from "framer-motion";
 import { CardProps } from "@/lib/types";
+import { staggeredAnimation } from "@/utils/animations";
 
 const FunctionalityCard: React.FC<CardProps> = ({ item, index }) => {
-  const staggeredAnimation = {
-    initial: {
-      opacity: 0,
-      x: -100,
-    },
-    animate: (index: number) => ({
-      opacity: 1,
-      x: 0,
-      transition: {
-        delay: 0.2 * index,
-      },
-    }),
-  };
-
   return (
     <motion.div
       className="card shadow-xl"
-      variants={staggeredAnimation}
+      variants={staggeredAnimation(0.2)}
       initial="initial"
       whileInView="animate"
       viewport={{ once: true }}

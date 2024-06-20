@@ -3,13 +3,13 @@
 import { motion } from "framer-motion";
 import functionalitiesData from "../lib/functionalitiesData";
 import FunctionalityCard from "./FunctionalityCard";
-import { slideIn } from "../utils/animations";
+import { slideInY } from "../utils/animations";
 
 const Functionalities: React.FC = () => {
   return (
     <motion.section
       className="relative mx-auto my-8 max-w-7xl rounded-lg border-t-2 bg-base-300 bg-opacity-10 p-4 shadow-lg shadow-primary"
-      variants={slideIn}
+      variants={slideInY}
       initial="initial"
       whileInView="animate"
       viewport={{ once: true }}

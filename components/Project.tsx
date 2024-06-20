@@ -7,21 +7,22 @@ import { ProjectType, StackType } from "@/lib/types";
 import { RiStackFill } from "react-icons/ri";
 
 import { IoMdText } from "react-icons/io";
-import { stackData } from "../lib/projectData";
+import { projectStack } from "../lib/projectData";
 import ProjectDescription from "./ProjectDescription";
-import { slideIn } from "../utils/animations";
+import { slideInX, slideInY } from "../utils/animations";
+import StackPreview from "./StackPreview";
 
 const LayoutExample = ({ project }: { project: ProjectType }) => {
   const ref = useRef<HTMLDivElement>(null);
 
   const projectStacks: StackType[] = project.stackNames.map(
-    (name) => stackData.find((stack) => stack.name === name) as StackType,
+    (name) => projectStack.find((stack) => stack.name === name) as StackType,
   );
 
   return (
     <motion.div
       ref={ref}
-      variants={slideIn}
+      variants={slideInY}
       initial="initial"
       whileInView="animate"
       viewport={{ once: true }}
@@ -50,14 +51,20 @@ const LayoutExample = ({ project }: { project: ProjectType }) => {
           </figure>
         </a>
         {/* card */}
-        <div className="bg card-body mx-auto flex flex-col">
+        <motion.div
+          className="bg card-body mx-auto flex flex-col"
+          variants={slideInX}
+          initial="initial"
+          whileInView="animate"
+          viewport={{ once: true }}
+        >
           <div className="block lg:hidden">
             <h2 className="card-title text-2xl">{project.title}</h2>
             {project.category && (
               <h3 className="mb-4 font-mono text-lg">[{project.category}]</h3>
             )}
           </div>
-          {projectStacks.length > 0 && (
+          {projectStack.length > 0 && (
             <div className="flex flex-col items-center gap-4 md:flex-row">
               <div className="text-4xl">
                 <RiStackFill />
@@ -65,20 +72,8 @@ const LayoutExample = ({ project }: { project: ProjectType }) => {
 
               {/* stack section */}
               <div className="flex flex-wrap gap-3 rounded-lg p-3 md:gap-4">
-                {projectStacks.map((stack) => (
-                  /* image */
-                  <figure key={stack.name} className="flex items-center">
-                    <i>
-                      <Image
-                        src={stack.image}
-                        alt={stack.name}
-                        width={25}
-                        height={25}
-                        style={{ width: "25px", height: "25px" }}
-                      />
-                    </i>
-                    <figcaption className="ml-1">{stack.name}</figcaption>
-                  </figure>
+                {projectStacks.map((stack, index) => (
+                  <StackPreview key={index} stack={stack} showCaption={true} />
                 ))}
               </div>
               {/* description */}
@@ -99,7 +94,7 @@ const LayoutExample = ({ project }: { project: ProjectType }) => {
               View Website
             </a>
           </div>
-        </div>
+        </motion.div>
       </div>
       {/* description */}
       <div className="hidden md:flex">

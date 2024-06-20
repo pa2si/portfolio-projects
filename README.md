@@ -1,8 +1,9 @@
-v 0.1.24
+v 0.1.25
 
 new:
 
-- updated text for Salsa-Calendar description
+- stack icons in about
+- staggered animation and slideIn are now animation object and function to import in animations.
 
 what's done:
 

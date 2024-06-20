@@ -9,6 +9,7 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
+import { slideInX, staggeredAnimation } from "@/utils/animations";
 
 const ReasonsToChooseMe = () => {
   const [visibleReasonsCount, setVisibleReasonsCount] = useState(3);
@@ -17,44 +18,22 @@ const ReasonsToChooseMe = () => {
     setVisibleReasonsCount((prevCount) => prevCount + 3);
   };
 
-  const slideIn = {
-    initial: {
-      opacity: 0,
-      x: -200,
-    },
-    animate: {
-      opacity: 1,
-      x: 0,
-      transition: {
-        duration: 1,
-      },
-    },
-  };
-
-  const staggeredAnimation = {
-    initial: {
-      opacity: 0,
-      x: -100,
-    },
-    animate: (index: number) => ({
-      opacity: 1,
-      x: 0,
-      transition: {
-        delay: 0.1 * index,
-      },
-    }),
-  };
-
   return (
     <section className="mx-auto max-w-7xl">
-      <div className="p-4 sm:p-8">
+      <div
+        className="p-4 sm:p-8"
+        style={{
+          backgroundImage: "/coding-3-12.svg",
+          backgroundAttachment: "fixed",
+        }}
+      >
         <h2 className="mb-4 text-2xl font-semibold">Find here 10 reasons...</h2>
         <div className="space-y-6">
           {reasonsData.slice(0, visibleReasonsCount).map((reason, index) => (
             <motion.div
               key={index}
               className="bg card bordered shadow-sm shadow-primary"
-              variants={index < 3 ? slideIn : staggeredAnimation}
+              variants={index < 3 ? slideInX : staggeredAnimation(0.1)}
               initial="initial"
               whileInView="animate"
               viewport={{ once: true }}
