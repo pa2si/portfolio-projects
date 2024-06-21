@@ -23,6 +23,10 @@ export const aboutStack: StackType[] = [
     image: "/javascript-svgrepo-com.svg",
   },
   {
+    name: "Node.js",
+    image: "/node-js-seeklogo.svg",
+  },
+  {
     name: "Clerk",
     image: "/clerk.com.svg",
   },

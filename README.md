@@ -1,8 +1,8 @@
-v 0.1.29
+v 0.1.30
 
 new:
 
-- new favicon
+- added node.js to about stack icons
 
   what's done:
 
