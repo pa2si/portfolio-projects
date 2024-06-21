@@ -1,9 +1,8 @@
-v 0.1.28
+v 0.1.29
 
 new:
 
-- stack logos in about now 30 instead of 34px
-- border-b in mobile view
+- new favicon
 
   what's done:
 
