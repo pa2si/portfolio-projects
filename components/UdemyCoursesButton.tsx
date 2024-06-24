@@ -19,7 +19,7 @@ const UdemyCoursesButton = () => {
           </div>
         </DropdownMenuTrigger>
         <DropdownMenuContent>
-          <DropdownMenuLabel>Udemy courses i studied:</DropdownMenuLabel>
+          <DropdownMenuLabel>Completed Udemy courses:</DropdownMenuLabel>
           <DropdownMenuSeparator />
           <DropdownMenuItem>
             <UdemyCourseCards />

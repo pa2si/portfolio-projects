@@ -1,8 +1,8 @@
-v 0.1.30 + test-branch v2
+v 0.1.30 + test-branch v3
 
 new:
 
-- adapted udemyCourseCards
+- corrected p in udemy title
 
   what's done:
 
