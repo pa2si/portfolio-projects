@@ -26,7 +26,7 @@ const ThemeToggle: React.FC = () => {
   }, [theme]);
 
   return (
-    <label className="swap swap-rotate text-primary transition-all duration-200 ease-in-out hover:text-primary-content">
+    <label className="swap swap-rotate pr-2 text-primary transition-all duration-200 ease-in-out hover:text-primary-content lg:pr-0">
       {/* this hidden checkbox controls the state */}
       <input
         id="theme-controller"

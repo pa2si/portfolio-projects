@@ -1,10 +1,9 @@
-v 0.1.30 + test-branch v4
+v 0.1.31
 
 new:
 
-- hero bg image now fixed
-- hovering effects in project now only from xl on
-- some border ad shadow adaption in project
+- margins for icons in mobile menu
+- hero bg not removed fixed attachment
 
   what's done:
 

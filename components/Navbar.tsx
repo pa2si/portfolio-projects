@@ -158,8 +158,8 @@ const Navbar = () => {
                   </Link>
                 </li>
                 {/* social icons */}
-                <div className="mt-2 flex justify-end">
-                  <ul className="gap-3 text-primary">
+                <div className="mt-2 flex">
+                  <ul className="text-primary">
                     {socialLinks.map((link, index) => {
                       const { url, icon } = link;
                       return (
@@ -176,7 +176,7 @@ const Navbar = () => {
                       );
                     })}
                   </ul>
-                  <ul className="mr-4 flex text-primary">
+                  <ul className="-ml-1 mr-4 flex text-primary">
                     {email.map((item) => {
                       const { email, icon } = item;
                       return (
@@ -191,11 +191,11 @@ const Navbar = () => {
                       );
                     })}
                     <ShareButton
-                      className="text-primary"
+                      className="ml-1 text-primary"
                       hoverClassName="hover:text-primary-content"
                     />
                   </ul>
-                  <div className="flex gap-1">
+                  <div className="-ml-1 flex gap-3">
                     <UdemyCoursesButton />
                     <ThemeToggle />
                   </div>
