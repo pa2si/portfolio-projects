@@ -1,8 +1,10 @@
-v 0.1.30 + test-branch v3
+v 0.1.30 + test-branch v4
 
 new:
 
-- corrected p in udemy title
+- hero bg image now fixed
+- hovering effects in project now only from xl on
+- some border ad shadow adaption in project
 
   what's done:
 

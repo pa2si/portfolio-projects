@@ -7,6 +7,7 @@ const Hero = () => {
       className="hero min-h-svh"
       style={{
         backgroundImage: "url(/oskar-yildiz-cOkpTiJMGzA-unsplash.jpg)",
+        backgroundAttachment: "fixed",
       }}
     >
       <div className="hero-overlay bg-opacity-60"></div>

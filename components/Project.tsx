@@ -9,7 +9,7 @@ import { RiStackFill } from "react-icons/ri";
 import { IoMdText } from "react-icons/io";
 import { projectStack } from "../lib/projectData";
 import ProjectDescription from "./ProjectDescription";
-import { slideInX, slideInY, staggeredAnimation } from "../utils/animations";
+import { slideInY, staggeredAnimation } from "../utils/animations";
 import StackPreview from "./StackPreview";
 
 const LayoutExample = ({ project }: { project: ProjectType }) => {
@@ -28,9 +28,14 @@ const LayoutExample = ({ project }: { project: ProjectType }) => {
       viewport={{ once: true }}
       className="grid grid-cols-1 justify-center lg:grid-cols-2 lg:gap-8"
     >
-      <div className="rounded-lg hover:border-4 hover:shadow-xl">
-        <div className="bg card bordered relative shadow-lg transition-all duration-300 ease-in-out lg:hover:-rotate-2">
-          <a href={project.url} target="_blank" rel="noopener noreferrer">
+      <div className="rounded-lg xl:hover:border-4 xl:hover:shadow-xl">
+        <div className="bg card bordered relative shadow-lg transition-all duration-300 ease-in-out xl:hover:-rotate-2">
+          <a
+            href={project.url}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="relative lg:static"
+          >
             <figure>
               <Image
                 src={project.image}
@@ -41,7 +46,7 @@ const LayoutExample = ({ project }: { project: ProjectType }) => {
                 className="rounded-t-md border-b-2 shadow-sm"
               />
               {/* div with hover text */}
-              <div className="absolute inset-0 flex items-center justify-center rounded-lg bg-black bg-opacity-50 opacity-0 transition-opacity duration-300 ease-in-out md:hover:opacity-100">
+              <div className="absolute inset-0 flex items-center justify-center rounded-lg bg-black bg-opacity-50 opacity-0 transition-opacity duration-300 ease-in-out xl:hover:opacity-100">
                 <span className="text-lg text-white">
                   Click to view website
                 </span>
@@ -60,6 +65,7 @@ const LayoutExample = ({ project }: { project: ProjectType }) => {
               <div className="flex flex-col items-center gap-4 md:flex-row">
                 <div className="text-4xl">
                   <RiStackFill />
+                  <div className="h-2 w-full border-b-4 md:hidden" />
                 </div>
 
                 {/* stack section */}
@@ -79,14 +85,14 @@ const LayoutExample = ({ project }: { project: ProjectType }) => {
                   ))}
                 </ul>
                 {/* description */}
-                <div className="flex md:hidden">
+                <div className="flex rounded-lg border-t-2 drop-shadow-lg md:hidden">
                   <IoMdText />
                   <ProjectDescription project={project} />
                 </div>
               </div>
             )}
             {/* view Website button in mobile view */}
-            <div className="card-actions mt-6 justify-center md:hidden">
+            <div className="card-actions mt-6 justify-center xl:hidden">
               <a
                 href={project.url}
                 target="_blank"
