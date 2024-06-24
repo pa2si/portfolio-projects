@@ -1,15 +1,18 @@
+"use client";
+
 import Image from "next/image";
 import { FaQuoteRight } from "react-icons/fa";
-import { MotionDiv, MotionUl } from "@/lib/MotionComponents";
+import { MotionDiv } from "@/lib/MotionComponents";
 import { aboutDescription } from "@/lib/aboutData";
 import { aboutStack } from "@/lib/aboutData";
 import StackPreview from "./StackPreview";
-import { slideInY } from "@/utils/animations";
+import { slideInY, staggeredAnimation } from "@/utils/animations";
+import { motion } from "framer-motion";
 
 const About = () => {
   return (
     <section
-      className="base-100 flex min-h-[35rem] items-center justify-center pt-12"
+      className="base-100 flex min-h-[35rem] items-center justify-center pt-12 lg:-mb-12"
       id="about"
     >
       <MotionDiv
@@ -43,7 +46,15 @@ const About = () => {
             <ul className="flex flex-wrap gap-3 rounded-lg p-3 md:gap-4">
               {aboutStack.map((stack, index) => (
                 <li key={index}>
-                  <StackPreview stack={stack} showCaption={false} />
+                  <motion.div
+                    variants={staggeredAnimation(0.1)}
+                    initial="initial"
+                    whileInView="animate"
+                    viewport={{ once: true }}
+                    custom={index}
+                  >
+                    <StackPreview stack={stack} showCaption={false} />
+                  </motion.div>
                 </li>
               ))}
             </ul>

@@ -6,6 +6,7 @@ import { socialLinks, email, menuLinks } from "../lib/navbarData";
 import ThemeToggle from "@/components/ThemeToggle";
 import { usePathname } from "next/navigation";
 import ShareButton from "@/components/ShareButton";
+import UdemyCoursesButton from "./UdemyCoursesButton";
 
 const Navbar = () => {
   const pathname = usePathname();
@@ -63,7 +64,7 @@ const Navbar = () => {
   return (
     <header id="navbar">
       <nav className="navbar mx-auto max-w-7xl bg-base-100 font-bebasNeue">
-        <div className="mr-5p xl:mr-15p">
+        <div className="mr-5p xl:mr-15p logoNavMargin">
           <div className="dropdown">
             <div
               tabIndex={0}
@@ -194,7 +195,10 @@ const Navbar = () => {
                       hoverClassName="hover:text-primary-content"
                     />
                   </ul>
-                  <ThemeToggle />
+                  <div className="flex gap-1">
+                    <UdemyCoursesButton />
+                    <ThemeToggle />
+                  </div>
                 </div>
               </ul>
             )}
@@ -206,6 +210,7 @@ const Navbar = () => {
             Pascal <span className="text-nowrap text-secondary">Is Coding</span>
           </Link>
         </div>
+
         {/* Desktop View */}
         <div className="navbar-center hidden lg:flex">
           <ul className="info menu menu-horizontal divide-purple-200 px-1 text-lg tracking-[4px] text-primary transition-all ease-in-out">
@@ -284,7 +289,7 @@ const Navbar = () => {
               );
             })}
           </ul>
-          <ul className="ml-3 flex gap-3 pr-8 text-primary">
+          <ul className="themeToggleMargin ml-3 flex gap-3 pr-8 text-primary">
             {email.map((item) => {
               const { email, icon } = item;
               return (
@@ -303,7 +308,10 @@ const Navbar = () => {
               hoverClassName="hover:text-primary-content"
             />
           </ul>
-          <ThemeToggle />
+          <div className="flex gap-2">
+            <UdemyCoursesButton />
+            <ThemeToggle />
+          </div>
         </div>
       </nav>
     </header>

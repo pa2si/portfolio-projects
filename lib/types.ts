@@ -23,3 +23,10 @@ export type CardProps = {
   item: Functionality;
   index: number;
 };
+
+export type UdemyCourseType = {
+  imgUrl: string;
+  title: string;
+  link: string;
+  teacher: string;
+};

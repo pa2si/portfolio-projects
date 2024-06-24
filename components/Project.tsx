@@ -9,7 +9,7 @@ import { RiStackFill } from "react-icons/ri";
 import { IoMdText } from "react-icons/io";
 import { projectStack } from "../lib/projectData";
 import ProjectDescription from "./ProjectDescription";
-import { slideInX, slideInY } from "../utils/animations";
+import { slideInX, slideInY, staggeredAnimation } from "../utils/animations";
 import StackPreview from "./StackPreview";
 
 const LayoutExample = ({ project }: { project: ProjectType }) => {
@@ -28,73 +28,76 @@ const LayoutExample = ({ project }: { project: ProjectType }) => {
       viewport={{ once: true }}
       className="grid grid-cols-1 justify-center lg:grid-cols-2 lg:gap-8"
     >
-      <div className="card bordered relative shadow-lg transition-all duration-300 ease-in-out md:hover:scale-105">
-        <a
-          href={project.url}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="relative"
-        >
-          <figure>
-            <Image
-              src={project.image}
-              alt={project.title}
-              width={600}
-              height={300}
-              priority
-              className="rounded-t-md border-b-2 shadow-sm"
-            />
-            {/* div with hover text */}
-            <div className="absolute inset-0 flex items-center justify-center rounded-lg bg-black bg-opacity-50 opacity-0 transition-opacity duration-300 ease-in-out md:hover:opacity-100">
-              <span className="text-lg text-white">Click to view website</span>
-            </div>
-          </figure>
-        </a>
-        {/* card */}
-        <motion.div
-          className="bg card-body mx-auto flex flex-col"
-          variants={slideInX}
-          initial="initial"
-          whileInView="animate"
-          viewport={{ once: true }}
-        >
-          <div className="block lg:hidden">
-            <h2 className="card-title text-2xl">{project.title}</h2>
-            {project.category && (
-              <h3 className="mb-4 font-mono text-lg">[{project.category}]</h3>
-            )}
-          </div>
-          {projectStack.length > 0 && (
-            <div className="flex flex-col items-center gap-4 md:flex-row">
-              <div className="text-4xl">
-                <RiStackFill />
+      <div className="rounded-lg hover:border-4 hover:shadow-xl">
+        <div className="bg card bordered relative shadow-lg transition-all duration-300 ease-in-out lg:hover:-rotate-2">
+          <a href={project.url} target="_blank" rel="noopener noreferrer">
+            <figure>
+              <Image
+                src={project.image}
+                alt={project.title}
+                width={600}
+                height={300}
+                priority
+                className="rounded-t-md border-b-2 shadow-sm"
+              />
+              {/* div with hover text */}
+              <div className="absolute inset-0 flex items-center justify-center rounded-lg bg-black bg-opacity-50 opacity-0 transition-opacity duration-300 ease-in-out md:hover:opacity-100">
+                <span className="text-lg text-white">
+                  Click to view website
+                </span>
               </div>
+            </figure>
+          </a>
+          {/* card */}
+          <div className="bg card-body mx-auto flex flex-col">
+            <div className="block lg:hidden">
+              <h2 className="card-title text-2xl">{project.title}</h2>
+              {project.category && (
+                <h3 className="mb-4 font-mono text-lg">[{project.category}]</h3>
+              )}
+            </div>
+            {projectStack.length > 0 && (
+              <div className="flex flex-col items-center gap-4 md:flex-row">
+                <div className="text-4xl">
+                  <RiStackFill />
+                </div>
 
-              {/* stack section */}
-              <div className="flex flex-wrap gap-3 rounded-lg p-3 md:gap-4">
-                {projectStacks.map((stack, index) => (
-                  <StackPreview key={index} stack={stack} showCaption={true} />
-                ))}
+                {/* stack section */}
+                <ul className="flex flex-wrap gap-3 rounded-lg p-3 md:gap-4">
+                  {projectStacks.map((stack, index) => (
+                    <li key={index}>
+                      <motion.div
+                        variants={staggeredAnimation(0.1)}
+                        initial="initial"
+                        whileInView="animate"
+                        viewport={{ once: true }}
+                        custom={index}
+                      >
+                        <StackPreview stack={stack} showCaption={true} />
+                      </motion.div>
+                    </li>
+                  ))}
+                </ul>
+                {/* description */}
+                <div className="flex md:hidden">
+                  <IoMdText />
+                  <ProjectDescription project={project} />
+                </div>
               </div>
-              {/* description */}
-              <div className="flex md:hidden">
-                <IoMdText />
-                <ProjectDescription project={project} />
-              </div>
+            )}
+            {/* view Website button in mobile view */}
+            <div className="card-actions mt-6 justify-center md:hidden">
+              <a
+                href={project.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn btn-primary"
+              >
+                View Website
+              </a>
             </div>
-          )}
-          {/* view Website button in mobile view */}
-          <div className="card-actions mt-6 justify-center md:hidden">
-            <a
-              href={project.url}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="btn btn-primary"
-            >
-              View Website
-            </a>
           </div>
-        </motion.div>
+        </div>
       </div>
       {/* description */}
       <div className="hidden md:flex">

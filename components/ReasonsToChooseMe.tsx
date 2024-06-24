@@ -9,7 +9,7 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
-import { slideInX, staggeredAnimation } from "@/utils/animations";
+import { staggeredAnimation } from "@/utils/animations";
 
 const ReasonsToChooseMe = () => {
   const [visibleReasonsCount, setVisibleReasonsCount] = useState(3);
@@ -19,7 +19,7 @@ const ReasonsToChooseMe = () => {
   };
 
   return (
-    <section className="mx-auto max-w-7xl">
+    <section className="mx-auto -mb-12 -mt-8 max-w-7xl">
       <div
         className="p-4 sm:p-8"
         style={{
@@ -28,32 +28,33 @@ const ReasonsToChooseMe = () => {
         }}
       >
         <h2 className="mb-4 text-2xl font-semibold">Find here 10 reasons...</h2>
-        <div className="space-y-6">
+        <ul className="space-y-6">
           {reasonsData.slice(0, visibleReasonsCount).map((reason, index) => (
-            <motion.div
-              key={index}
-              className="bg card bordered shadow-sm shadow-primary"
-              variants={index < 3 ? slideInX : staggeredAnimation(0.1)}
-              initial="initial"
-              whileInView="animate"
-              viewport={{ once: true }}
-              custom={index}
-            >
-              <div className="card-body p-2">
-                <Accordion type="single" collapsible>
-                  <AccordionItem value="item-1">
-                    <AccordionTrigger>
-                      <h3 className="card-title">{reason.title}</h3>
-                    </AccordionTrigger>
-                    <AccordionContent>
-                      <p className="text-[1rem] leading-7">
-                        {reason.description}
-                      </p>
-                    </AccordionContent>
-                  </AccordionItem>
-                </Accordion>
-              </div>
-            </motion.div>
+            <li key={index}>
+              <motion.div
+                className="bg card bordered shadow-sm shadow-primary"
+                variants={staggeredAnimation(0.2)}
+                initial="initial"
+                whileInView="animate"
+                viewport={{ once: true }}
+                custom={index}
+              >
+                <div className="card-body p-2">
+                  <Accordion type="single" collapsible>
+                    <AccordionItem value="item-1">
+                      <AccordionTrigger>
+                        <h3 className="card-title">{reason.title}</h3>
+                      </AccordionTrigger>
+                      <AccordionContent>
+                        <p className="text-[1rem] leading-7">
+                          {reason.description}
+                        </p>
+                      </AccordionContent>
+                    </AccordionItem>
+                  </Accordion>
+                </div>
+              </motion.div>
+            </li>
           ))}
           <div className="flex justify-center">
             {visibleReasonsCount < reasonsData.length && (
@@ -65,7 +66,7 @@ const ReasonsToChooseMe = () => {
               </button>
             )}
           </div>
-        </div>
+        </ul>
       </div>
     </section>
   );

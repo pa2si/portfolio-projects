@@ -27,31 +27,18 @@ export default function Home() {
     <main>
       <Hero />
       <About />
-      <Intermediate
-        text="Why give me work?"
-        id={reasonsToChooseMeId}
-        // image="/coding-3-12.svg"
-      />
+      <Intermediate text="Why give me work?" id={reasonsToChooseMeId} />
       <ReasonsToChooseMe />
-      <Intermediate
-        text="Explore some of my projects"
-        id={projectsId}
-        // image="/startup-2-54.svg"
-      />
+      <Intermediate text="Explore some of my projects" id={projectsId} />
       <Projects />
 
       <Intermediate
         text="Discover general functionalities for Web Apps using React.js"
         id={functionalitiesId}
-        // image="coding-2-7.svg"
       />
       <Functionalities />
 
-      <Intermediate
-        text="Let's get in contact!"
-        id={contactId}
-        // image="/undraw_team_chat_re_vbq1.svg"
-      />
+      <Intermediate text="Let's get in contact!" id={contactId} />
       <Contact />
     </main>
   );
