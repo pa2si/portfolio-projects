@@ -1,8 +1,10 @@
-v 0.1.30
+v 0.1.30 + test-branch
 
 new:
 
-- added node.js to about stack icons
+- staggeredAnimation for stack in about and project
+- navbar margin adaption
+- UdemyCourses Button
 
   what's done:
 
