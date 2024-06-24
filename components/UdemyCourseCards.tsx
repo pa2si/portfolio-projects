@@ -6,10 +6,10 @@ import { MotionLi } from "@/lib/MotionComponents";
 
 const UdemyCourseCards = () => {
   return (
-    <ul className="flex flex-col gap-2 overflow-scroll">
+    <ul className="flex h-72 flex-col gap-2 overflow-y-scroll py-2 md:h-fit">
       {udemyCourseData.map((course: UdemyCourseType, index: number) => (
         <MotionLi
-          className="card card-side h-20 w-svw bg-base-100 shadow-xl md:h-28 md:w-full"
+          className="card card-side h-24 w-svw bg-base-100 shadow-xl md:h-28 md:w-full"
           key={index}
           variants={staggeredAnimation(0.15)}
           initial="initial"

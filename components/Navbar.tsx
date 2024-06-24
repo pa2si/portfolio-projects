@@ -64,7 +64,7 @@ const Navbar = () => {
   return (
     <header id="navbar">
       <nav className="navbar mx-auto max-w-7xl bg-base-100 font-bebasNeue">
-        <div className="mr-5p xl:mr-15p logoNavMargin">
+        <div className="logoNavMargin mr-5p xl:mr-15p">
           <div className="dropdown">
             <div
               tabIndex={0}

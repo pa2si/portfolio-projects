@@ -1,10 +1,8 @@
-v 0.1.30 + test-branch
+v 0.1.30 + test-branch v2
 
 new:
 
-- staggeredAnimation for stack in about and project
-- navbar margin adaption
-- UdemyCourses Button
+- adapted udemyCourseCards
 
   what's done:
 
