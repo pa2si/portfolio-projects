@@ -1,8 +1,9 @@
-v 0.1.33
+v 0.1.34
 
 new:
 
-- adpated padding in reasonsComp accordeons
+- h-svh now for hero.tsx
+- globas.css height: 100svh added for bg-hero
 
   what's done:
 
