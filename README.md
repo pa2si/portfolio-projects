@@ -1,9 +1,9 @@
-v 0.1.31
+v 0.1.32
 
 new:
 
-- margins for icons in mobile menu
-- hero bg not removed fixed attachment
+- hero bg image is now from xl on fixed
+- retexted the reasonsData
 
   what's done:
 

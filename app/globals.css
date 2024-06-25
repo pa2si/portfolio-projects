@@ -12,3 +12,14 @@
     margin-right: 8px;
   }
 }
+
+.bg-hero {
+  background-image: url("/oskar-yildiz-cOkpTiJMGzA-unsplash.jpg");
+}
+
+@media (min-width: 1080px) {
+  .bg-hero {
+    background-image: url("/oskar-yildiz-cOkpTiJMGzA-unsplash.jpg");
+    background-attachment: fixed;
+  }
+}

@@ -2,12 +2,12 @@ const reasonsData = [
   {
     title: "Certified Full Stack Web Developer",
     description:
-      "I am a certified Full Stack web developer from Indisoft, showcasing my formal education and unwavering commitment to the field. My certification underscores my dedication to delivering high-quality web development solutions. Besides that certification, I have completed numerous Udemy courses and YouTube tutorials, continuously enhancing my skills and staying updated with the latest industry trends.",
+      "Certified Full Stack Web Developer from Indisoft, committed to delivering high-quality solutions. Continuously enhancing skills and staying updated with the latest industry standards through Udemy courses and other platforms.",
   },
   {
     title: "Unstoppable Determination",
     description:
-      "I may have started programming later than others, but my persistence and determination have driven me to successfully complete already several freelance projects. Now, I'm seeking a contract position where I can bring my dedication and proven skills to a team environment.",
+      "With a strong background as a service technician in IT/AV, I am now channeling my expertise into programming. My persistence and determination have led me to successfully complete numerous freelance projects. I am eager to bring my dedication and proven skills to a contract position within a dynamic team environment.",
   },
   {
     title: "Enthusiastic and Passionate",
@@ -22,7 +22,7 @@ const reasonsData = [
   {
     title: "CMS and Internationalization",
     description:
-      "I have experience implementing content management systems (CMS) and internationalization, ensuring websites are adaptable for global audiences. This expertise allows me to create versatile and accessible web solutions that cater to diverse user needs.",
+      "I implement CMS and internationalization, making websites adaptable for global audiences. This expertise enables me to create versatile and accessible web solutions for diverse user needs.",
   },
   {
     title: "UI Libraries Proficiency",
@@ -35,9 +35,9 @@ const reasonsData = [
       " When coding, I always think about how to structure the components to make it easy to scale up as the project grows and evolves. My approach ensures that your application can handle increasing complexity and new features smoothly, making me a reliable choice for your development needs",
   },
   {
-    title: "Exploring testing",
+    title: "Next step...testing",
     description:
-      "I am beginning to dive into the world of testing, eager to enhance the quality and reliability of my code. My commitment to learning testing practices will ensure robust and error-free applications.",
+      "I am beginning to dive into the world of testing, eager to enhance the quality and reliability of my code.",
   },
   {
     title: "Commitment to Clean Code and Best Practices",
