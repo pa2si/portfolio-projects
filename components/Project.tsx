@@ -47,7 +47,7 @@ const LayoutExample = ({ project }: { project: ProjectType }) => {
               />
               {/* div with hover text */}
               <div className="absolute inset-0 flex items-center justify-center rounded-lg bg-black bg-opacity-50 opacity-0 transition-opacity duration-300 ease-in-out xl:hover:opacity-100">
-                <span className="text-lg text-white">
+                <span className="text-2xl text-white">
                   Click to view website
                 </span>
               </div>

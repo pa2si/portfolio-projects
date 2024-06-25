@@ -18,7 +18,7 @@ export default function RootLayout({
 }>) {
   return (
     <html className="scroll-smooth" lang="en">
-      <body className={`${BebasNeue.variable}`}>
+      <body className={`bg-base-100 ${BebasNeue.variable}`}>
         <Navbar />
         <SchrollUp />
         {children}

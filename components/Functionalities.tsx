@@ -8,7 +8,7 @@ import { slideInY } from "../utils/animations";
 const Functionalities: React.FC = () => {
   return (
     <motion.section
-      className="relative mx-auto my-8 max-w-7xl rounded-lg border-t-2 bg-base-300 bg-opacity-10 p-4 shadow-lg shadow-primary"
+      className="relative mx-auto my-8 max-w-7xl rounded-lg border-t-2 p-4 shadow-lg shadow-primary"
       variants={slideInY}
       initial="initial"
       whileInView="animate"

@@ -1,12 +1,8 @@
-v 0.1.35
+v 0.1.36
 
 new:
 
-- dark light adjustments in UI.
-- read more button animation when opening in closing
-- intermediate phrase has span
-- text-mono for accordeon content
-- icons for projects
+- bg-base-100 adapted in tailwind.config for dark mode
 
   what's done:
 

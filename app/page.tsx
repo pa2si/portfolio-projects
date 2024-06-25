@@ -24,7 +24,7 @@ export default function Home() {
     processedMenuLinks;
 
   return (
-    <main>
+    <main className="bg-base-100">
       <Hero />
       <About />
       <Intermediate

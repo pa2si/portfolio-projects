@@ -28,6 +28,9 @@ const config = {
           ".primary-dark-2": {
             "background-color": "#444fbf",
           },
+          ".bg-base-100": {
+            "background-color": "#222830",
+          },
         },
       },
     ],

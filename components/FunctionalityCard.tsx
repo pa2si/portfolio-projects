@@ -8,7 +8,7 @@ import { staggeredAnimation } from "@/utils/animations";
 const FunctionalityCard: React.FC<CardProps> = ({ item, index }) => {
   return (
     <motion.div
-      className="card shadow-xl"
+      className="bg card shadow-xl"
       variants={staggeredAnimation(0.2)}
       initial="initial"
       whileInView="animate"
