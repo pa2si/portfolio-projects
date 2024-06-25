@@ -1,9 +1,8 @@
-v 0.1.32
+v 0.1.33
 
 new:
 
-- hero bg image is now from xl on fixed
-- retexted the reasonsData
+- adpated padding in reasonsComp accordeons
 
   what's done:
 

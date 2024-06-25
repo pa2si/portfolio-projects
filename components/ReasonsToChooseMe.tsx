@@ -39,7 +39,7 @@ const ReasonsToChooseMe = () => {
                 viewport={{ once: true }}
                 custom={index}
               >
-                <div className="card-body p-2">
+                <div className="card-body px-2 py-1">
                   <Accordion type="single" collapsible>
                     <AccordionItem value="item-1">
                       <AccordionTrigger>
