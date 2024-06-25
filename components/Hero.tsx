@@ -4,7 +4,7 @@ import Link from "next/link";
 const Hero = () => {
   return (
     <section
-      className="hero min-h-svh"
+      className="hero h-svh"
       style={{
         backgroundImage: "url(/oskar-yildiz-cOkpTiJMGzA-unsplash.jpg)",
       }}
