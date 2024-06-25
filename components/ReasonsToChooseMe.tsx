@@ -46,7 +46,7 @@ const ReasonsToChooseMe = () => {
                         <h3 className="card-title">{reason.title}</h3>
                       </AccordionTrigger>
                       <AccordionContent>
-                        <p className="text-[1rem] leading-7">
+                        <p className="font-mono text-[1rem] leading-7">
                           {reason.description}
                         </p>
                       </AccordionContent>

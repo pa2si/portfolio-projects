@@ -16,7 +16,6 @@ const UdemyCourseCards = () => {
           whileInView="animate"
           viewport={{ once: false }}
           custom={index}
-          // style={{ height: "6.7rem" }}
         >
           <figure>
             <Image
@@ -27,7 +26,7 @@ const UdemyCourseCards = () => {
               className="rounded-full"
             />
           </figure>
-          <div className="card-body -mt-6 md:-mt-0">
+          <div className="card-body -mt-6 text-primary md:-mt-0">
             <h2 className="card-title text-sm md:text-lg">{course.title}</h2>
             <div className="flex">
               <p>by {course.teacher}</p>

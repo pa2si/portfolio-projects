@@ -25,6 +25,9 @@ const config = {
           ".bg": {
             "background-color": "#212226",
           },
+          ".primary-dark-2": {
+            "background-color": "#444fbf",
+          },
         },
       },
     ],

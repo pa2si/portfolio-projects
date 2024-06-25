@@ -5,6 +5,7 @@ export type ProjectType = {
   url: string;
   stackNames: string[];
   description: string;
+  icon: string;
 };
 
 export type StackType = {

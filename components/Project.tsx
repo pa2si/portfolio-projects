@@ -53,10 +53,20 @@ const LayoutExample = ({ project }: { project: ProjectType }) => {
               </div>
             </figure>
           </a>
-          {/* card */}
+          {/* card mobile*/}
           <div className="bg card-body mx-auto flex flex-col">
             <div className="block lg:hidden">
-              <h2 className="card-title text-2xl">{project.title}</h2>
+              <div className="mb-2 flex gap-3">
+                <Image
+                  src={project.icon}
+                  width={40}
+                  height={40}
+                  alt={project.title}
+                  className="rounded-full p-[2px] ring-1 ring-primary drop-shadow-md"
+                  style={{ height: "40px", width: "40px" }}
+                />
+                <h2 className="card-title text-2xl">{project.title}</h2>
+              </div>
               {project.category && (
                 <h3 className="mb-4 font-mono text-lg">[{project.category}]</h3>
               )}

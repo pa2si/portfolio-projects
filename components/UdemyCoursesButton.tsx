@@ -18,10 +18,12 @@ const UdemyCoursesButton = () => {
             <SiUdemy />
           </div>
         </DropdownMenuTrigger>
-        <DropdownMenuContent>
-          <DropdownMenuLabel>Completed Udemy courses:</DropdownMenuLabel>
+        <DropdownMenuContent className="bg-base-100">
+          <DropdownMenuLabel className="text-lg text-secondary">
+            Completed Udemy courses:
+          </DropdownMenuLabel>
           <DropdownMenuSeparator />
-          <DropdownMenuItem>
+          <DropdownMenuItem className="bg-base-100 focus:bg-base-100">
             <UdemyCourseCards />
           </DropdownMenuItem>
         </DropdownMenuContent>

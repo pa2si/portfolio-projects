@@ -1,4 +1,7 @@
+import { MotionDiv } from "@/lib/MotionComponents";
 import { ProjectType } from "@/lib/types";
+22;
+import Image from "next/image";
 import { useState } from "react";
 
 const ProjectDescription = ({ project }: { project: ProjectType }) => {
@@ -9,19 +12,32 @@ const ProjectDescription = ({ project }: { project: ProjectType }) => {
       <div
         className={`hidden items-center gap-3 lg:block xl:flex ${project.category ? "mb-1 lg:mb-4" : "mb-4"}`}
       >
-        <h2 className={`card-title text-2xl`}>{project.title}</h2>
+        <div className="flex gap-3 xl:grid xl:grid-flow-col">
+          <h2 className="card-title text-2xl xl:order-2">{project.title}</h2>
+          <Image
+            src={project.icon}
+            width={40}
+            height={40}
+            alt={project.title}
+            className="rounded-full p-1 ring-1 ring-primary drop-shadow-md xl:order-1"
+            style={{ height: "40px", width: "40px" }}
+          />
+        </div>
         {project.category && (
           <h3 className="font-mono text-lg xl:mt-[2px]">
             [{project.category}]
           </h3>
         )}
       </div>
-      <p
-        className={`font-mono leading-8 ${
+      <MotionDiv
+        initial={false}
+        animate={{ height: expanded ? "auto" : "90px" }}
+        transition={{ duration: 0.3 }}
+        className={`overflow-hidden font-mono leading-8 ${
           expanded ? "" : "line-clamp-3 lg:line-clamp-none"
         }`}
         dangerouslySetInnerHTML={{ __html: project.description }}
-      ></p>
+      ></MotionDiv>
       {project.description.length > 100 && (
         <button
           onClick={() => setExpanded(!expanded)}

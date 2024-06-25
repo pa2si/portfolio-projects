@@ -7,6 +7,7 @@ export const projectsData: ProjectType[] = [
     category: "Full-Stack Web App",
     image: "/salsa-calendar.jpg",
     url: "https://salsa-calendar-preview.vercel.app",
+    icon: "/calendar-icon.png",
     stackNames: [
       "Next.js",
       "TypeScript",
@@ -30,6 +31,7 @@ export const projectsData: ProjectType[] = [
     category: "Full-Stack Website",
     image: "/tortuga.png",
     url: "https://tortugastorytelling.de/",
+    icon: "/tortuga-storytelling-icon.jpg",
     stackNames: [
       "Next.js",
       "Javascript",
@@ -45,6 +47,7 @@ export const projectsData: ProjectType[] = [
     title: "Mercancia",
     image: "/mercancia.jpg",
     url: "https://mercancia-nancy.vercel.app",
+    icon: "/mercancia-icon.svg",
     stackNames: [
       "Next.js",
       "TypeScript",
@@ -62,6 +65,7 @@ export const projectsData: ProjectType[] = [
     title: "erdkugel GmbH",
     image: "/erdkugel.jpg",
     url: "https://www.erdkugel.net/",
+    icon: "/erdkugel-icon.webp",
     stackNames: ["Next.js", "Javascript", "CSS", "Tailwind", "Framer-Motion"],
     description:
       "A contact site for a client who is in the process of setting up their company. Detailed services, images, and additional information are still to come. The tech stack is straightforward, and Framer Motion is used for simple animations. To avoid the use of cookies, the client opted against a direct Google Maps integration, preferring instead to include a link to Google Maps. ",
@@ -70,6 +74,7 @@ export const projectsData: ProjectType[] = [
     title: "Backroads Layout Example",
     image: "/backroads.jpg",
     url: "https://pa2si-backroads-app.netlify.app//",
+    icon: "/backroads-icon.jpg",
     stackNames: ["React.js", "CSS", "Framer-Motion"],
     description:
       "This is a frontend project demonstrating a simple user interface for a travel company using React.js and Vite. The goal is to showcase basic UI elements and functionalities created with React components.",

@@ -7,7 +7,10 @@ const Intermediate = ({ text, id }: { text: string; id?: string }) => {
       <div className="mx-auto flex items-center justify-center lg:w-4/6">
         <div className="flex min-h-full items-center justify-center">
           <div className="border-2-b-primary w-3/4 rounded-lg xl:w-full">
-            <p className="text-center text-4xl font-bold sm:text-5xl">{text}</p>
+            <p
+              className="text-center text-4xl font-bold sm:text-5xl"
+              dangerouslySetInnerHTML={{ __html: text }}
+            ></p>
             <div className="mx-auto mt-8 max-w-3xl">
               <div className="relative mt-1 h-1 w-full">
                 <div className="absolute inset-0 bg-gradient-to-r from-transparent via-primary to-transparent"></div>

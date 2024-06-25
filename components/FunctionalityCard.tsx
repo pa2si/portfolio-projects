@@ -15,8 +15,8 @@ const FunctionalityCard: React.FC<CardProps> = ({ item, index }) => {
       viewport={{ once: true }}
       custom={index}
     >
-      <div className="transition-all duration-300 ease-in-out md:hover:scale-105">
-        <figure className="relative h-[auto] w-full border-b-2 shadow-sm">
+      <div className="transition-all duration-300 ease-in-out xl:hover:scale-105">
+        <figure className="relative h-[auto] w-full rounded-lg border-b-2 drop-shadow-lg">
           <a href={item.url} target="_blank" rel="noopener noreferrer">
             <Image
               src={item.image}
@@ -32,7 +32,7 @@ const FunctionalityCard: React.FC<CardProps> = ({ item, index }) => {
           <h2 className="card-title">{item.title}</h2>
           <p className="font-mono">{item.description}</p>
         </div>
-        <div className="card-actions mb-6 mt-4 justify-center md:hidden">
+        <div className="card-actions mb-6 mt-4 justify-center xl:hidden">
           <a
             href={item.url}
             target="_blank"

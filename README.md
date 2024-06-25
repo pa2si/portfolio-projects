@@ -1,9 +1,12 @@
-v 0.1.34
+v 0.1.35
 
 new:
 
-- h-svh now for hero.tsx
-- globas.css height: 100svh added for bg-hero
+- dark light adjustments in UI.
+- read more button animation when opening in closing
+- intermediate phrase has span
+- text-mono for accordeon content
+- icons for projects
 
   what's done:
 

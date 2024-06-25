@@ -25,3 +25,7 @@
     height: 100svh;
   }
 }
+
+.text-secondary {
+  color: #2e76c3; /* Example color */
+}

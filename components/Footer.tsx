@@ -20,16 +20,16 @@ const Footer = () => {
     contactId,
   } = menuLinks;
   return (
-    <footer className="footer footer-center rounded bg-primary bg-opacity-90 p-10 text-primary-content">
+    <footer className="primary-dark-2 footer footer-center rounded bg-primary p-10 text-primary-content">
       <nav className="grid gap-3 md:grid-cols-7">
         <Link
-          className="link-hover link"
+          className="link-hover link transition-all duration-200 ease-in-out hover:text-slate-400 hover:no-underline"
           href={pathname === "/" ? `${aboutId}` : `/${aboutId}`}
         >
           {about}
         </Link>
         <Link
-          className="link-hover link"
+          className="link-hover link transition-all duration-200 ease-in-out hover:text-slate-400 hover:no-underline"
           href={
             pathname === "/"
               ? `${reasonsToChooseMeId}`
@@ -39,22 +39,28 @@ const Footer = () => {
           {reasonsToChooseMe}
         </Link>
         <Link
-          className="link-hover link"
+          className="link-hover link transition-all duration-200 ease-in-out hover:text-slate-400 hover:no-underline"
           href={pathname === "/" ? `${projectsId}` : `/${projectsId}`}
         >
           {projects}
         </Link>
 
         <Link
-          className="link-hover link"
+          className="link-hover link transition-all duration-200 ease-in-out hover:text-slate-400 hover:no-underline"
           href={pathname === "/" ? `${contactId}` : `/${contactId}`}
         >
           {contact}
         </Link>
-        <Link className="link-hover link" href={"/imprint"}>
+        <Link
+          className="link-hover link transition-all duration-200 ease-in-out hover:text-slate-400 hover:no-underline"
+          href={"/imprint"}
+        >
           Imprint
         </Link>
-        <Link className="link-hover link" href={"/privacy"}>
+        <Link
+          className="link-hover link transition-all duration-200 ease-in-out hover:text-slate-400 hover:no-underline"
+          href={"/privacy"}
+        >
           Privacy Policy
         </Link>
       </nav>
@@ -68,7 +74,7 @@ const Footer = () => {
                   href={url}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-2xl text-primary-content transition-all duration-200 ease-in-out hover:scale-125 hover:text-secondary"
+                  className="slater3text-gray-300 ease-in-ou4 text-2xl text-primary-content transition-all duration-200 hover:text-slate-400"
                 >
                   {icon}
                 </a>
@@ -81,7 +87,7 @@ const Footer = () => {
               <li key={email}>
                 <a
                   href={`mailto:${email}`}
-                  className="text-2xl text-primary-content transition-all duration-200 ease-in-out hover:text-secondary"
+                  className="ease-slateo3t duration-204 text-2xl text-primary-content transition-all hover:text-slate-400"
                 >
                   {icon}
                 </a>
@@ -89,10 +95,7 @@ const Footer = () => {
             );
           })}
           <li>
-            <ShareButton
-              className="text-primary-content"
-              hoverClassName="hover:text-secondary"
-            />
+            <ShareButton className="text-primary-content transition-all duration-200 ease-in-out hover:text-slate-400" />
           </li>
         </ul>
       </nav>
