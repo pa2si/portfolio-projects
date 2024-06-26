@@ -1,8 +1,12 @@
-v 0.1.36
+v 0.1.37
 
 new:
 
-- bg-base-100 adapted in tailwind.config for dark mode
+- css for bg image in hero now: height: 100svh;
+  max-height: -webkit-fill-available;
+  background-size: cover
+
+  - class of h-svh not anymore
 
   what's done:
 
