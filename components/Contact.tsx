@@ -53,7 +53,7 @@ const Contact = () => {
   };
 
   return (
-    <motion.div
+    <motion.section
       className="bg mx-auto mb-12 max-w-2xl rounded-lg border-2 border-base-200 p-8 shadow-lg"
       id="contact"
       variants={slideInY}
@@ -111,7 +111,7 @@ const Contact = () => {
                   <Textarea
                     id="message"
                     placeholder="How can I help you?"
-                    className="h-36 bg-base-100"
+                    className="bg-base-100 h-36"
                     {...field}
                   />
                 </FormControl>
@@ -161,7 +161,7 @@ const Contact = () => {
           </div>
         </form>
       </Form>
-    </motion.div>
+    </motion.section>
   );
 };
 

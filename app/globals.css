@@ -15,14 +15,16 @@
 
 .bg-hero {
   background-image: url("/oskar-yildiz-cOkpTiJMGzA-unsplash.jpg");
-  height: 100svh;
+  height: 100vh;
+  max-height: -webkit-fill-available;
 }
 
 @media (min-width: 1080px) {
   .bg-hero {
     background-image: url("/oskar-yildiz-cOkpTiJMGzA-unsplash.jpg");
     background-attachment: fixed;
-    height: 100svh;
+    height: 100vh;
+    max-height: -webkit-fill-available;
   }
 }
 
