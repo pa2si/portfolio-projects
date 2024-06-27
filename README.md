@@ -1,8 +1,8 @@
-v 0.1.38
+v 0.1.39
 
 new:
 
-- Image component in UdemyCourseCards now now has priority prop
+- Image component in projectCards and funcionalityCards now also has priority prop
 
   - class of h-svh not anymore
 

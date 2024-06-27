@@ -12,6 +12,7 @@ const FunctionalityCard: React.FC<CardProps> = ({ item, index }) => {
       variants={staggeredAnimation(0.2)}
       initial="initial"
       whileInView="animate"
+      property=""
       viewport={{ once: true }}
       custom={index}
     >

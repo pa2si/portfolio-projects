@@ -62,6 +62,7 @@ const LayoutExample = ({ project }: { project: ProjectType }) => {
                   width={40}
                   height={40}
                   alt={project.title}
+                  priority
                   className="rounded-full p-[2px] ring-1 ring-primary drop-shadow-md"
                   style={{ height: "40px", width: "40px" }}
                 />
