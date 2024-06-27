@@ -1,10 +1,8 @@
-v 0.1.37
+v 0.1.38
 
 new:
 
-- css for bg image in hero now: height: 100svh;
-  max-height: -webkit-fill-available;
-  background-size: cover
+- Image component in UdemyCourseCards now now has priority prop
 
   - class of h-svh not anymore
 

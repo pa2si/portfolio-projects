@@ -9,7 +9,7 @@ const UdemyCourseCards = () => {
     <ul className="flex h-72 flex-col gap-2 overflow-y-scroll py-2 md:h-fit">
       {udemyCourseData.map((course: UdemyCourseType, index: number) => (
         <MotionLi
-          className="card card-side h-24 w-svw bg-base-100 shadow-xl md:h-28 md:w-full"
+          className="bg-base-100 card card-side h-24 w-svw shadow-xl md:h-28 md:w-full"
           key={index}
           variants={staggeredAnimation(0.15)}
           initial="initial"
@@ -23,6 +23,7 @@ const UdemyCourseCards = () => {
               alt={course.title}
               width={100}
               height={100}
+              priority
               className="rounded-full"
             />
           </figure>
