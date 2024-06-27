@@ -20,6 +20,7 @@ const StackPreview = ({
           alt={stack.name}
           width={imageSize.width}
           height={imageSize.height}
+          priority
           style={{
             width: `${imageSize.width}px`,
             height: `${imageSize.height}px`,
