@@ -4,6 +4,7 @@ import Link from "next/link";
 import { socialLinks, email, menuLinks } from "../lib/navbarData";
 import { usePathname } from "next/navigation";
 import ShareButton from "@/components/ShareButton";
+import DownloadButton from "./DownloadButton";
 
 const Footer = () => {
   const pathname = usePathname();
@@ -65,11 +66,11 @@ const Footer = () => {
         </Link>
       </nav>
       <nav>
-        <ul className="flex gap-3 text-primary">
+        <div className="flex gap-3 text-primary">
           {socialLinks.map((link, index) => {
             const { url, icon } = link;
             return (
-              <li key={index}>
+              <div key={index}>
                 <a
                   href={url}
                   target="_blank"
@@ -78,26 +79,30 @@ const Footer = () => {
                 >
                   {icon}
                 </a>
-              </li>
+              </div>
             );
           })}
           {email.map((item) => {
             const { email, icon } = item;
             return (
-              <li key={email}>
+              <div key={email}>
                 <a
                   href={`mailto:${email}`}
                   className="ease-slateo3t duration-204 text-2xl text-primary-content transition-all hover:text-slate-400"
                 >
                   {icon}
                 </a>
-              </li>
+              </div>
             );
           })}
-          <li>
+          <div>
             <ShareButton className="text-primary-content transition-all duration-200 ease-in-out hover:text-slate-400" />
-          </li>
-        </ul>
+          </div>
+        </div>
+        {/* donwload button */}
+        <div className="mt-1">
+          <DownloadButton />
+        </div>
       </nav>
       <aside>
         <p>Copyright © {currentYear} - All rights reserved</p>

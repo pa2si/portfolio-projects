@@ -1,10 +1,9 @@
-v 0.1.41
+v 0.1.42
 
 new:
 
-- Image component in stackPreview now also has priority prop
-
-  - class of h-svh not anymore
+- DownloadButton component
+- v 0.1.41 changes: project descriptions updated
 
   what's done:
 
