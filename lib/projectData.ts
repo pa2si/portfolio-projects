@@ -24,7 +24,7 @@ export const projectsData: ProjectType[] = [
       "Google Maps Javascript API",
     ],
     description:
-      "This web app provides an easy overview of salsa events with month, week, or day views. Registered and logged-in users can add, update, and delete their own events, which are visible to all visitors, whether signed in or not. Authorization is managed using the Clerk library. The project uses Next.js server actions for backend communication. A complex form, with both front-end and back-end validation, sends the form data to a Prisma database. The Google Maps JavaScript API is utilized for auto-complete to help fill out the form. For image hosting and uploading, with back-end validation, Edge Store is used. The web app is designed to scale easily. Please note that the current focus is not yet on design. [in ongoing development!]",
+      "Development of a web app to overview salsa events with monthly, weekly, and daily views. Registered users can add, update, and delete their own events, visible to all visitors. Authorization is handled via the Clerk library. Utilizes Next.js server actions for backend communication. Features a complex form with frontend and backend validation that sends data to a Prisma database. Incorporates the Google Maps JavaScript API for auto-complete and Edge Store for image hosting and upload with backend validation. The web app is scalable, and the design is currently practical. [Ongoing development!]",
   },
   {
     title: "Tortuga Storytelling",
@@ -41,7 +41,7 @@ export const projectsData: ProjectType[] = [
       "Storyblock",
     ],
     description:
-      "A custom website for a client in Berlin, Germany. The client envisioned a unique design to showcase both upcoming and past events. She desired a playful yet straightforward look that truly represented her personality. Despite exploring various modern design suggestions, we embraced her original concept, resulting in a final product that perfectly matches her vision. The website is SEO optimized and utilizes Storyblok as its CMS for managing image and text content. It supports multiple locales, offering content in English, German, and Spanish. ",
+      "Project for a client in Berlin, Germany: Development of a customised, SEO-optimised website for the presentation of events. Unique, playful design according to the client's specifications. Use of Storyblok as CMS to manage image and text content. Multilingual support in English, German and Spanish.",
   },
   {
     title: "Mercancia",
@@ -58,7 +58,7 @@ export const projectsData: ProjectType[] = [
       "DaisyUi",
     ],
     description:
-      "A project for a client in Colombia. The client needed an easy way to showcase products for sale. The target audience is primarily older individuals who are not very familiar with technology. The solution allows users to view products easily on their mobile phones and then directly contact the vendor to discuss further details. <br> It is responsive and uses daisyUI components such as Footer, Menus and theme settings. ",
+      "Development of a responsive website for showcasing daily use products. Utilizes daisyUI components for the footer, menus, and theme settings. The UI is specifically designed to facilitate ease of use for older generations, enabling easy product viewing and direct contact with the seller via mobile phones",
   },
 
   {
@@ -68,7 +68,7 @@ export const projectsData: ProjectType[] = [
     icon: "/erdkugel-icon.webp",
     stackNames: ["Next.js", "Javascript", "CSS", "Tailwind", "Framer-Motion"],
     description:
-      "A contact site for a client who is in the process of setting up their company. Detailed services, images, and additional information are still to come. The tech stack is straightforward, and Framer Motion is used for simple animations. To avoid the use of cookies, the client opted against a direct Google Maps integration, preferring instead to include a link to Google Maps. ",
+      "Project for a company founder: Development of a contact page with Framer Motion for simple animations. Due to a lack of details on services and images, a minimalist technical stack was chosen. Instead of integrating Google Maps, a link to Google Maps was used to avoid cookies.",
   },
   {
     title: "Backroads Layout Example",
