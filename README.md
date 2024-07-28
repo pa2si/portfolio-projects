@@ -1,9 +1,8 @@
-v 0.1.42
+v 0.1.43
 
 new:
 
-- DownloadButton component
-- v 0.1.41 changes: project descriptions updated
+- download path in download button updated
 
   what's done:
 
