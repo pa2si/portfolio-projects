@@ -1,9 +1,8 @@
-v 0.1.44
+v 0.1.45
 
 new:
 
-- new erdkugel project description
-- download path in download button updated
+- import new edited cv version of 2024-07-30
 
   what's done:
 
