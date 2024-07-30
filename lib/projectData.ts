@@ -68,7 +68,7 @@ export const projectsData: ProjectType[] = [
     icon: "/erdkugel-icon.webp",
     stackNames: ["Next.js", "Javascript", "CSS", "Tailwind", "Framer-Motion"],
     description:
-      "Project for a company founder: Development of a contact page with Framer Motion for simple animations. Due to a lack of details on services and images, a minimalist technical stack was chosen. Instead of integrating Google Maps, a link to Google Maps was used to avoid cookies.",
+      "Project for a company founder: Development of a contact page with Framer Motion for simple animations. With more media content and functionalities planned for the future, a minimalist technical stack was chosen. A modal view was used as a detailed contact option.",
   },
   {
     title: "Backroads Layout Example",

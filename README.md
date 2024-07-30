@@ -1,7 +1,8 @@
-v 0.1.43
+v 0.1.44
 
 new:
 
+- new erdkugel project description
 - download path in download button updated
 
   what's done:
