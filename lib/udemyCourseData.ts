@@ -20,7 +20,13 @@ const udemyCourseData = [
   {
     imgUrl: "/typescript.jpg",
     title: "Next.js & OpenAI",
-    link: "https://www.codingaddict.io/courses/enrolled/2462624",
+    link: "https://www.codingaddict.io/p/nextjs-openai",
+    teacher: "John Smilga",
+  },
+  {
+    imgUrl: "/home-away.jpg",
+    title: "Airbnb Clone",
+    link: "https://www.codingaddict.io/p/mastering-next-js-2024-edition",
     teacher: "John Smilga",
   },
 ];

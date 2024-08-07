@@ -1,8 +1,8 @@
-v 0.1.45
+v 0.1.46
 
 new:
 
-- import new edited cv version of 2024-07-30
+- home-away project added to udemy course data
 
   what's done:
 

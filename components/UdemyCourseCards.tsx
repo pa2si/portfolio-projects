@@ -14,7 +14,7 @@ const UdemyCourseCards = () => {
           variants={staggeredAnimation(0.15)}
           initial="initial"
           whileInView="animate"
-          viewport={{ once: false }}
+          viewport={{ once: true }}
           custom={index}
         >
           <figure>
